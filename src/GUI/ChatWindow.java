@@ -12,14 +12,12 @@ public class ChatWindow extends JFrame implements Mediator {
     private JTextField messageField;
     private String sender;
     private String recipient;
-    private ArrayList<Colleague> colleagues;
     private ChatWindow recipientWindow; // For private chat
     private ArrayList<ChatWindow> groupChatWindows;
     public boolean isGroupChat = false;
 
-    public ChatWindow(String title, String sender, String recipient, ArrayList<Colleague> colleagues, ArrayList<ChatWindow> groupChatWindows) {
+    public ChatWindow(String title, String sender, String recipient, ArrayList<ChatWindow> groupChatWindows) {
         super(title);
-        this.colleagues = colleagues;
         this.sender = sender;
         this.recipient = recipient;
         this.groupChatWindows = groupChatWindows;
@@ -28,7 +26,7 @@ public class ChatWindow extends JFrame implements Mediator {
         setLayout(new BorderLayout());
 
         chatArea = new JTextArea();
-        chatArea.setEditable(false);
+        chatArea.setEditable(false);  //
         chatArea.setLineWrap(true);
         chatArea.setWrapStyleWord(true);
 
@@ -56,14 +54,15 @@ public class ChatWindow extends JFrame implements Mediator {
         setVisible(true);
     }
 
+
     public void sendMessage() {
         String message = messageField.getText();
         if (!message.isEmpty()) {
             if (isGroupChat) {
                 // Broadcast the message to all participants
-                for (ChatWindow chatWindow : groupChatWindows) {
-                    if (!chatWindow.sender.equals(sender)) {
-                        chatWindow.displayMessage(sender, message); // Display the message in the recipient's window
+                for (ChatWindow recipientWindow : groupChatWindows) {
+                    if (!recipientWindow.sender.equals(sender)) {
+                        recipientWindow.displayMessage(sender, message); // Display the message in the recipient's window
                     }
                 }
             } else {
@@ -74,17 +73,26 @@ public class ChatWindow extends JFrame implements Mediator {
             }
 
             // Display the message in the current window
-            displayMessage(sender, message);
+            displayMessage("Yo", message);
 
             // Clear the message field
             messageField.setText("");
         }
     }
 
+    /**
+     *
+     * @param recipientWindow
+     */
     public void setRecipientWindow(ChatWindow recipientWindow) {
         this.recipientWindow = recipientWindow;
     }
 
+    /**
+     *
+     * @param sender
+     * @param message
+     */
     public void displayMessage(String sender, String message) {
         chatArea.append(sender + ": " + message + "\n");
     }

@@ -38,12 +38,8 @@ F
 src/GUI/Colleague.java,a\c\acd82e81f048e178b44947c07824906fc909ccb2
 N
 src/GUI/ConcreteColleague.java,e\8\e8ef9c803be9cd23bdea19276c4f01e1cee7b830
-M
-src/GUI/MediatorConcrete.java,1\2\127767affd04420e3deff0ab80271b018440f7b0
 <
 Diagram.puml,8\d\8dd405e6b6e5b47f32061366b37dbbf7fad392b3
-N
-src/GUI/GroupChatMediator.java,9\7\97eb3c3e8aaca2ee0484a5a68f77faf17f8faa6b
 w
 G.idea/sonarlint/issuestore/3/0/30205a209c6ce77c4cfc19a09e6f57c588b7fb88,8\3\83c97b69f1983e71cd804a5894ec167e14452d2c
 

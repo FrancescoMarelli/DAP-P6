@@ -83,19 +83,13 @@ public class PrivateChatFrame extends JFrame {
     }
 
     private void openPrivateChatWindows(String sender, String recipient) {
-        ChatWindow senderWindow = new ChatWindow("Private Chat: " + sender + " to " + recipient, sender, recipient, colleagues, null);
-        ChatWindow recipientWindow = new ChatWindow("Private Chat: " + recipient + " to " + sender, recipient, sender, colleagues, null);
+        ChatWindow senderWindow = new ChatWindow("Private Chat: " + sender + " to " + recipient, sender, recipient, null);
+        ChatWindow recipientWindow = new ChatWindow("Private Chat: " + recipient + " to " + sender, recipient, sender, null);
 
         // Establece la referencia cruzada entre las ventanas de chat
         senderWindow.setRecipientWindow(recipientWindow);
         recipientWindow.setRecipientWindow(senderWindow);
 
-        // Establece el mediador para los colegas
-        for (Colleague colleague : colleagues) {
-            if (colleague.getName().equals(sender) || colleague.getName().equals(recipient)) {
-                colleague.setMediator(senderWindow);
-            }
-        }
 
         dispose();
     }

@@ -31,7 +31,7 @@ public class GroupChatFrame extends JFrame {
 
         // Create a new chat window for each participant
         for (Colleague c : colleagues) {
-            ChatWindow chatWindow = new ChatWindow("Group Chat: " + c.getName(), c.getName(), "Group Chat", colleagues, chatWindows);
+            ChatWindow chatWindow = new ChatWindow("Group Chat: " + c.getName(), c.getName(), "Group Chat", chatWindows);
             chatWindows.add(chatWindow);
             chatWindow.isGroupChat = true;  // Set the chat window as a group chat
         }
