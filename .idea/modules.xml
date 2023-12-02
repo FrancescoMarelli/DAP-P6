@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DAP-P6.iml" filepath="$PROJECT_DIR$/DAP-P6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiChat-Mediator.iml" filepath="$PROJECT_DIR$/MultiChat-Mediator.iml" />
     </modules>
   </component>
 </project>
