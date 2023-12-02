@@ -1,0 +1,11 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÝØ˜Žúÿÿÿÿ8ÅÎñõ¿1
+|
+java:S1450
+"ZRemove the "chatWindows" field and declare it as a local variable in the relevant methods.(Àøƒòûÿÿÿÿ8ÎÎñõ¿1
+v
+java:S1450"YRemove the "colleagues" field and declare it as a local variable in the relevant methods.(Ìÿ¥Þ8ÎÎñõ¿1
+I
+java:S1948",Make "colleagues" transient or serializable.(Ìÿ¥Þ8ÏÎñõ¿1
+k
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öþÿÿÿÿ8ÒÎñõ¿1

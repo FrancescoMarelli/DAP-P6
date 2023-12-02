@@ -28,10 +28,6 @@ M
 GUI Diagram.puml,2\4\24b5c3667b2cdcd8401c912379a4bbef58df2876
 C
 PatternDiagram.puml,e\a\ea29e8f22f22f0c95593428a36e18df1336e1823
-C
-GeneralDiagram.puml,c\2\c2b68e4a95fc393cb0f4dbdc77c22ebfbfe8dcc6
-E
-Mediator Diagram.puml,9\6\96d933472a48d5ed0473a428c31d8b08c905ab0a
 E
 src/GUI/Mediator.java,2\b\2ba0612c49709ea410c14a4e6adc72c65153d0f6
 F

@@ -1,0 +1,16 @@
+
+’
+java:S1319"pThe type of "groupChatWindows" should be an interface such as "List" rather than the implementation "ArrayList".(ƒìËüÿÿÿÿ8¢Ã¿ó¿1
+J
+java:S1604%"(Make this anonymous inner class a lambda(½ËĞóûÿÿÿÿ8£Ã¿ó¿1
+y
+java:S1104"WMake isGroupChat a static final constant or non-public and provide accessors if needed.(Ø°¸«üÿÿÿÿ8£Ã¿ó¿1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(İØ˜úÿÿÿÿ8¤Ã¿ó¿1
+i
+java:S3252"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(Òœ Ğ8¹Ã¿ó¿1
+v
+java:S3252""YUse static access with "javax.swing.ScrollPaneConstants" for "VERTICAL_SCROLLBAR_ALWAYS".(ìæ¢›8»Ã¿ó¿1
+`
+java:S1117?"CRename "recipientWindow" which hides the field declared at line 15.(Ç´«Ä8ø˜Íõ¿1
+O
+java:S1068"-Remove this unused "recipient" private field.(µ¤Èøÿÿÿÿ8 ÌÁó¿1
