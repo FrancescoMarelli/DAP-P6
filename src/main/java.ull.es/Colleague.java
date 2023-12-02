@@ -1,5 +1,3 @@
-package java.es.ull.GUI;
-
 public interface Colleague {
 
     public void setMediator(Mediator mediator);

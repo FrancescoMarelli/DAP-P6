@@ -1,5 +1,4 @@
 // GroupChatFrame.java
-package java.es.ull.GUI;
 
 import javax.swing.*;
 import java.awt.*;
