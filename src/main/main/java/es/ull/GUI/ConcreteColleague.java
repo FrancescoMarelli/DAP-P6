@@ -1,4 +1,4 @@
-package GUI;
+package java.es.ull.GUI;
 
 public class ConcreteColleague implements Colleague {
     String name;

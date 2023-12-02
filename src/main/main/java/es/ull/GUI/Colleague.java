@@ -1,4 +1,4 @@
-package GUI;
+package java.es.ull.GUI;
 
 public interface Colleague {
 
