@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.util.ArrayList;
 
 
+import static junit.framework.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 public class GroupChatFrameTest {
     @Test
@@ -56,6 +57,19 @@ public class GroupChatFrameTest {
         assertEquals("Group Chat: Maria", groupChatFrame.chatWindows.get(2).getTitle());
         assertEquals("Group Chat: Ana", groupChatFrame.chatWindows.get(3).getTitle());
         assertEquals("Group Chat: Luis", groupChatFrame.chatWindows.get(4).getTitle());
+    }
+
+    @Test
+    void testColleagues(){
+        GroupChatFrame groupChatFrame = new GroupChatFrame();
+        groupChatFrame.colleagues = new ArrayList<>();
+        // Add participants to the chatroom
+        groupChatFrame.colleagues.add(new ConcreteColleague("Pepe"));
+        groupChatFrame.colleagues.add(new ConcreteColleague("Juan"));
+
+        assertEquals(2, groupChatFrame.colleagues.size());
+        assertEquals("Pepe", groupChatFrame.colleagues.get(0).getName());
+        assertEquals("Juan", groupChatFrame.colleagues.get(1).getName());
     }
 
 
