@@ -60,16 +60,10 @@ public class GroupChatFrameTest {
     }
 
     @Test
-    void testColleagues(){
+    void testWindowConstants() {
         GroupChatFrame groupChatFrame = new GroupChatFrame();
-        groupChatFrame.colleagues = new ArrayList<>();
-        // Add participants to the chatroom
-        groupChatFrame.colleagues.add(new ConcreteColleague("Pepe"));
-        groupChatFrame.colleagues.add(new ConcreteColleague("Juan"));
-
-        assertEquals(2, groupChatFrame.colleagues.size());
-        assertEquals("Pepe", groupChatFrame.colleagues.get(0).getName());
-        assertEquals("Juan", groupChatFrame.colleagues.get(1).getName());
+        assertEquals(3, groupChatFrame.getDefaultCloseOperation());
+        assertTrue(groupChatFrame.isResizable());
     }
 
 
