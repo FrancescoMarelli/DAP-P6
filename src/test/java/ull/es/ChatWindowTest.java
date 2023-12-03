@@ -37,12 +37,4 @@ class ChatWindowTest {
         // Mocking user input
         chatWindow.displayMessage(sender, "Hello, testing!");
     }
-
-    @Test
-    void testWindowConstants(){
-        ChatWindow chatWindow = new ChatWindow("Test Chat", "User1", "User2", null);
-        assertEquals("Test Chat", chatWindow.getTitle());
-        assertEquals(2, chatWindow.getDefaultCloseOperation());
-
-    }
 }

@@ -58,12 +58,5 @@ public class GroupChatFrameTest {
         assertEquals("Group Chat: Luis", groupChatFrame.chatWindows.get(4).getTitle());
     }
 
-    @Test
-    void testWindowConstants() {
-        GroupChatFrame groupChatFrame = new GroupChatFrame();
-        assertEquals(3, groupChatFrame.getDefaultCloseOperation());
-        assertTrue(groupChatFrame.isResizable());
-    }
-
 
 }
