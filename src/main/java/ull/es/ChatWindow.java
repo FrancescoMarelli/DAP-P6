@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class ChatWindow extends JFrame implements Mediator {
 
-    private JTextArea chatArea;
-    private JTextField messageField;
+    public JTextArea chatArea;
+    public JTextField messageField;
     private String sender;
     private String recipient;
     private ChatWindow recipientWindow; // For private chat

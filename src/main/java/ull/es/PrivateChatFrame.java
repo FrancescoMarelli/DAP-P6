@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class PrivateChatFrame extends JFrame {
 
-    private JComboBox<String> senders;
-    private JComboBox<String> recipients;
-    private ArrayList<Colleague> colleagues;
+    public JComboBox<String> senders;
+    public JComboBox<String> recipients;
+    public ArrayList<Colleague> colleagues;
 
 
     public PrivateChatFrame() {
@@ -41,7 +41,7 @@ public class PrivateChatFrame extends JFrame {
 
     }
 
-    private void setComboBox() {
+    void setComboBox() {
         // Create a dropdown list for selecting senders
         senders = new JComboBox<>();
         for (Colleague c : colleagues)
@@ -74,9 +74,7 @@ public class PrivateChatFrame extends JFrame {
             }
         });
 
-        JPanel buttonPanel = new JPanel();
-        buttonPanel.add(startButton);
-        add(buttonPanel, BorderLayout.SOUTH);
+        add(startButton, BorderLayout.SOUTH);
     }
 
     private void openPrivateChatWindows(String sender, String recipient) {
