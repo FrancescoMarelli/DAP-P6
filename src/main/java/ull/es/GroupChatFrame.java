@@ -6,8 +6,8 @@ import java.util.ArrayList;
 
 public class GroupChatFrame extends JFrame {
 
-    private ArrayList<ChatWindow> chatWindows; // List to store all chat windows
-    private ArrayList<Colleague> colleagues;
+    ArrayList<ChatWindow> chatWindows; // List to store all chat windows
+    ArrayList<Colleague> colleagues;
 
     public GroupChatFrame() {
         super("Group Chat");
