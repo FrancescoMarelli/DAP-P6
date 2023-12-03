@@ -11,7 +11,7 @@ public class GroupChatFrame extends JFrame {
 
     public GroupChatFrame() {
         super("Group Chat");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         initializeChat();

@@ -20,7 +20,7 @@ public class ChatWindow extends JFrame implements Mediator {
         this.recipient = recipient;
         this.groupChatWindows = groupChatWindows;
 
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
 
         chatArea = new JTextArea();
@@ -29,7 +29,7 @@ public class ChatWindow extends JFrame implements Mediator {
         chatArea.setWrapStyleWord(true);
 
         JScrollPane scrollPane = new JScrollPane(chatArea);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         messageField = new JTextField();
         messageField.addActionListener(new ActionListener() {

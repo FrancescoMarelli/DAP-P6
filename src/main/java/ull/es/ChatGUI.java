@@ -10,7 +10,7 @@ public class ChatGUI extends JFrame {
 
     public ChatGUI() {
         super("ChatRoom");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         setResizable(false);
 
