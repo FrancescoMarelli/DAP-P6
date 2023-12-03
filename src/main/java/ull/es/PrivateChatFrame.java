@@ -13,7 +13,7 @@ public class PrivateChatFrame extends JFrame {
 
     public PrivateChatFrame() {
         super("Chat Application");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         initializeChat();
