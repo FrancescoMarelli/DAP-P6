@@ -5,8 +5,8 @@ import java.awt.event.ActionListener;
 
 public class ChatGUI extends JFrame {
 
-    private JButton startButton;
-    private JComboBox<String> conversationType;
+    JButton startButton;
+    JComboBox<String> conversationType;
 
     public ChatGUI() {
         super("ChatRoom");
