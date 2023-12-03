@@ -4,7 +4,6 @@ import java.awt.BorderLayout;
 import java.util.ArrayList;
 
 
-import static junit.framework.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 public class GroupChatFrameTest {
     @Test
