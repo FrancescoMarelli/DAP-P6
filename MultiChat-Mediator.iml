@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/ull" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/ull/es" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java/ull" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java/ull/es" isTestSource="true" />
     </content>
